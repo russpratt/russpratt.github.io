@@ -2,18 +2,60 @@
 <html lang="EN">
     <head>
         <title>Hello! </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <style>
+
             h1 {
-                color: blue;
+                background: whitesmoke;
+                color: rgb(73, 73, 73);
+                text-align: center;
+                padding: 2rem;
+                border-radius: 1rem;
+            }
+            
+            /* #Grid {
+                background-color: white;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 50px;
+                grid-template-columns: 200px 200px ;
+            }
+
+            .Grid-item {
+                background-color: whitesmoke;
+                font-size: 30;
+                padding: 10px;
+                text-align: center;
+            } */
+            .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 2rem;
+            margin: 2rem;
+            }
+            .Grid-item {
+            background: whitesmoke;
+            padding: 3.5rem;
+            border-radius: 1rem;
+            }
+            body {
+            margin: 6rem;
+            font: 16px system-ui;
             }
         </style>
     </head>
     <body>
         <h1>Russel Pratt</h1>
-        <div>contact me via <a href="mailto:russ.pratt@gmail.com">russ.pratt@gmail.com</a> or phone (647) 859-6006</div>
-        <div>about me....</div>
-        <div>project links</div>
-        <div>resume</div>
-        <div>cottage</div>
+        <div class="grid">
+            <div class="Grid-item">about me....</div>
+            <div class="Grid-item">project links</div>
+            <div class="Grid-item">resume</div>
+            <div class="Grid-item">cottage</div>
+        </div>
+        <div class="grid">
+            <div class="Grid-item"><a href="mailto:russ.pratt@gmail.com">russ.pratt@gmail.com</a></div>
+            <div class="Grid-item">phone (647) 859-6006</div>
+        </div>
     </body>
 </html>
